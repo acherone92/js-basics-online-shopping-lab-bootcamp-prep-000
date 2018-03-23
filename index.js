@@ -43,11 +43,19 @@ function viewCart() {
 
 function total() {
   // Iterates through cart aray to give total value of items in cart
+<<<<<<< HEAD
   var cartTotal = 0;
   for (var i=0;i<cart.length; i++){
     cartTotal += parseInt(cart[i].itemPrice);
   }
     return cartTotal;
+=======
+  var total = 0;
+  for (var i=0;i<cart.length; i++){
+    total += parseInt(cart[i].itemPrice);
+  }
+    return total;
+>>>>>>> b2a31bd198ef7c6b3cac1e5390d6bb3333d926c7
 }
 
 function removeFromCart(item) {
@@ -72,9 +80,15 @@ function placeOrder(cardNumber) {
   }
   else{
     console.log(typeof cardNumber);
+<<<<<<< HEAD
     var cost = total();
     cart = [];
     return `Your total cost is $${cost}, which will be charged to the card ${cardNumber}.`;
+=======
+    var total = total();
+    cart = [];
+    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`;
+>>>>>>> b2a31bd198ef7c6b3cac1e5390d6bb3333d926c7
   }
 }
 
